@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+   background: #5fb0ee; 
+}
+
+.card-list{
+    width: 90vw;
+    max-width: 1170px;
+    margin:3rem auto;
+    display: grid;
+    gap: 2rem;
+    
+}
+.card-bg{
+    background: #bbdbf4;
+}
+
+.loading{
+    margin-top: 300px;
+    margin-bottom: 300px;
+    text-align: center;   
+}
+.error{
+    margin-top: 300px;
+    margin-bottom: 300px;
+    text-align: center; 
+}
+
+.api-photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.user-list{
+    text-align: center; 
+    width: 90vw;
+    margin-top: 20px;
+    display: grid;
+}
+li{
+    margin:20px;
+    background: #bec0c2;
+    padding: 10px;
+    border-radius: 4px;
+    list-style: none;
+}
+.user-block{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .user-list {
+        grid-template-columns: repeat( 7 , 1fr);
+    }
 }
